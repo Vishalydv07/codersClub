@@ -1,0 +1,124 @@
+/* Base Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Text color */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Anchor Links */
+a {
+  text-decoration: none;
+  color: #1e90ff; /* Bright blue for links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00bfff; /* Light blue hover effect */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e90ff; /* Bright blue scrollbar */
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Category Button */
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: #1c1c1c; /* Dark button background */
+  color: #245d9e; /* Button text color */
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #1e90ff !important; /* Blue hover */
+  color: #ffffff !important; /* White text on hover */
+}
+
+.category-btn:hover span {
+  color: #ffffff !important;
+}
+
+/* React Player */
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+  background: #1c1c1c; /* Background color to match theme */
+}
+
+/* Search Bar */
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+  background: #1c1c1c; /* Dark input background */
+  color: #ffffff; /* Input text color */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search-bar::placeholder {
+  color: #999999; /* Placeholder color */
+}
+
+/* Horizontal Scroll */
+.scroll-horizontal {
+  overflow: auto !important;
+  scrollbar-color: #1e90ff transparent;
+  scrollbar-width: thin;
+}
+
+/* Copyright Section */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #aaaaaa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .react-player {
+    height: 45vh !important;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+}
